@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <!-- This block of code specifies the layout of the application
+     title, including the text size, style and color-->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginTop="52dp"
+        android:text="INVENTORY MANAGEMENT"
+        android:textColor="@color/colorPrimaryWhite"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- This block of code specifies the username layout of the application,
+    including the text size and style -->
+    <EditText
+        android:id="@+id/username_input"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:text="Username"
+        android:textColor="@color/colorPrimaryWhite"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- This block of code specifies the password layout of the application,
+    including the text size and style -->
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="278dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textColorHint="@color/colorPrimaryWhite"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/username_input" />
+
+    <!-- This block of code specifies the user Login button of the application,
+    including the text size, style, background and color-->
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="123dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:background="#DCDCDC"
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_state" />
+
+    <!-- This block of code specifies the user Sign Up button of the application,
+   including the text size, style, background and color-->
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="123dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="44dp"
+        android:background="#DCDCDC"
+        android:text="@string/signup"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toEndOf="@+id/login_btn"
+        app:layout_constraintTop_toBottomOf="@+id/user_state" />
+
+    <!-- This block of code specifies the option of forgot password in the application,
+   including the text size, style, and color-->
+    <TextView
+        android:id="@+id/forgot_password_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:clickable="true"
+        android:text="@string/forgot_password"
+        android:textColor="#008000"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+
+    <!-- This block of code specifies the username icon in the application,
+   including the size and color-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="39dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_action_username"
+        tools:srcCompat="@drawable/ic_action_username"
+        android:tint="@color/colorPrimaryWhite"/>
+
+    <!-- This block of code specifies the password icon in the application,
+   including the size and color-->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/ic_action_passwd"
+        tools:srcCompat="@drawable/ic_action_passwd"
+        android:tint="@color/colorPrimaryWhite"/>
+
+    <!-- This block of code specifies the state of the user in the application,
+   including the size and color-->
+    <TextView
+        android:id="@+id/user_state"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:text="Not Logged In"
+        android:textColor="#FF0000"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_input" />
+</androidx.constraintlayout.widget.ConstraintLayout>

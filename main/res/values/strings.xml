@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">IMA</string>
+    <string name="title">Login Screen</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="database_view">GRID VIEW</string>
+    <string name="user_id">ID</string>
+    <string name="name">Name</string>
+    <string name="postal_coode">Postal Code</string>
+    <string name="phone_number">Phone No.</string>
+    <string name="action">Action</string>
+    <string name="add_to_db">ADD TO GRID</string>
+    <string name="submit_btn">SUBMIT</string>
+    <string name="grant_permission">Grant permission</string>
+</resources>
